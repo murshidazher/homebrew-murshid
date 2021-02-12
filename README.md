@@ -8,6 +8,16 @@
 > brew tap murshidazher/homebrew-murshid
 > brew install --cask sketch@61
 ```
+
+### Update the Tap
+
+```sh
+> brew update
+```
 ## Link
 
 - [How to Create and maintain a Tap](https://github.com/Homebrew/brew/blob/master/docs/How-to-Create-and-Maintain-a-Tap.md)
+
+## LICENSE
+
+MIT
