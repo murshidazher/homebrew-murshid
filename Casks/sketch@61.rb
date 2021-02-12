@@ -1,4 +1,4 @@
-cask 'sketch' do
+cask 'sketch@61' do
   version '61-89581'
   sha256 '70329859429809474edc798a3efe24677efa9e4d1983ffc185bbea5570877815'
   version '61.1-89650'
