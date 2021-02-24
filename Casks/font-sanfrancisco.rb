@@ -1,5 +1,5 @@
 cask 'font-sanfrancisco' do
-  version :latest
+  version '1.0.0'
   sha256 '362217cca45425fe1e86307cc690f78fa84289ee2e11e71fb6c49d54c13b8017'
 
   # devimages-cdn.apple.com was verified as official when first introduced to the cask
