@@ -22,17 +22,7 @@ class Ballerina < Formula
 
     bin.install "bin/ballerina"
     libexec.install Dir["*"]
-    Pathname.glob("#{libexec}/bin/*.sh") do |path|
-      next if path == libexec+"bin/ballerina"
-
-      script_name = path.basename
-      bin_name    = path.basename ".sh"
-      (bin+bin_name).write <<~EOS
-        #!/bin/bash
-        export JAVA_HOME="${JAVA_HOME:-#{Formula["openjdk"].opt_prefix}}"
-        exec "#{libexec}/bin/#{script_name}" "$@"
-      EOS
-    end
+    bin.env_script_all_files(libexec/"bin", Formula["openjdk"].opt_prefix)
   end
 
   test do
