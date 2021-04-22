@@ -32,6 +32,7 @@ class Ballerina < Formula
         export JAVA_HOME="${JAVA_HOME:-#{Formula["openjdk"].opt_prefix}}"
         exec "#{libexec}/bin/#{script_name}" "$@"
       EOS
+    end
   end
 
   test do
