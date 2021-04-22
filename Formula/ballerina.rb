@@ -22,7 +22,7 @@ class Ballerina < Formula
 
     bin.install "bin/ballerina"
     libexec.install Dir["*"]
-    bin.env_script_all_files(libexec/"bin", Formula["openjdk"].opt_prefix)
+    bin.env_script_all_files(libexec/"bin", Language::Java.java_home_env("1.8"))
   end
 
   test do
