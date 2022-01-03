@@ -17,7 +17,7 @@ A quick introduction of the minimal setup you need to get up & running.
 
 ```shell
 > brew tap murshidazher/homebrew-murshid
-> brew install --cask sketch@61
+> brew install --cask sketch@3.x
 ```
 
 ### Update the Tap
